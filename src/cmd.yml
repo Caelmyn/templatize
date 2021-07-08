@@ -1,0 +1,34 @@
+name : templatize
+version : "0.1.0"
+author : Maxime BAILLY <maxbailly@hotmail.fr>
+about : A software that evaluates some templates from a JSON file.
+long_about : "\
+Templatize evaluates templates in files.\n\n\
+It will read the JSON file provided and generate tags names based on the key name in the JSON, capitalized.\n\
+A JSON like this :\n\
+\t{ \"name\": \"value\" }\n\
+will produce a tag NAME that will be searched in the files and replaced by the value of the JSON key.\n\
+Nested objects tags are generated as follow : PARENT_KEYNAME.\n\
+Arrays aren't supported yet.\n\n\
+Templates are formatted as follow :\n\
+\t%<TEMPLATE_NAME>%
+"
+
+args :
+  - config :
+      short : c
+      long : config
+      takes_value : true
+      help : Sets the template config file. Overrides -d option.
+  - template_dir :
+      short : d
+      long : template-dir
+      takes_value : true
+      required_unless : config
+      help : Sets the template root directory. If -c option is not set, it will overwrite templates content with evaluated values.
+  - json :
+      short : j
+      long : from-json
+      takes_value : true
+      required : true
+      help : Creates template tags from specified json file to be evaluated.
