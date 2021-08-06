@@ -19,13 +19,8 @@ args :
       short : c
       long : config
       takes_value : true
-      help : Sets the template config file. Overrides -d option.
-  - template_dir :
-      short : d
-      long : template-dir
-      takes_value : true
-      required_unless : config
-      help : Sets the template root directory. If -c option is not set, it will overwrite templates content with evaluated values.
+      required : true
+      help : Sets the template config file.
   - json :
       short : j
       long : from-json
