@@ -1,0 +1,1 @@
+[Field { name: "BOOL", value: "false" }, Field { name: "INT", value: "1" }, Field { name: "NULL", value: "null" }, Field { name: "STR", value: "string" }]
