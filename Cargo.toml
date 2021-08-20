@@ -1,6 +1,6 @@
 [package]
 name = "templatize"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Maxime BAILLY <maxbailly@hotmail.fr>"]
 edition = "2018"
 

@@ -56,3 +56,11 @@ fn from_struct() {
 
     assert_eq!(s, exp);
 }
+
+#[test]
+fn field_with_object() {
+    let s = format!("{:?}", templatize::fields_from_file(&inp_path("object_file")).expect("Failed to generate fields"));
+    let exp = load_expected("object_fields");
+
+    assert_eq!(s, exp);
+}

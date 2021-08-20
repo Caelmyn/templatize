@@ -1,0 +1,12 @@
+{
+    "object1": {
+        "value1": 1,
+        "value2": 2
+    },
+    "object2": {
+        "nested": {
+            "nested_value1": 1,
+            "nested_value2": 2
+        }
+    }
+}
